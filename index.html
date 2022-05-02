@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="http://at.alicdn.com/t/font_3370548_8s5hyprzz0e.js"></script>
+    <script src="http://at.alicdn.com/t/font_3370548_gtdz5wbnlds.js"></script>
+    <script src="http://at.alicdn.com/t/font_3370548_cyzh44vmjdv.js"></script>
+    <script src="http://at.alicdn.com/t/font_3370548_wuy22aw63no.js"></script>
+    <script src="http://at.alicdn.com/t/font_3370548_6xondu5xkwo.js"></script>
+    <script src="http://at.alicdn.com/t/font_3370548_nd7ez1xye3.js"></script>
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="top_nav">
+                <div class="top_nav_middle">
+                    <ul class="nav_ul">
+                        <li><a href="#">小米商城</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">MIUI</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">loT</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">云服务</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">天星数科</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">有品</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">小爱开放平台</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">企业团购</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">资质证照</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">协议规则</a></li>
+                        <li class="spacer"></li>
+                        <li class="top_down" id="top_down">
+                            <a href="#">下载app</a>
+                            <div class="download_app">
+                                <img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
+                                小米商城APP
+                            </div>
+                        </li>
+                        <li class="spacer"></li>
+                        <li><a href="#">Select Location</a></li>
+                    </ul>
+                    <div class="shopping_car">
+                        <p>
+                            <svg class="icon">
+                                <use href="#icon-gouwucheche"></use>
+                            </svg>
+                            <a href="#">购物车（0）</a>
+                            <div class="shopping_down">
+                                
+                            </div>
+                        </p>
+                    </div>
+                    <ul class="nav_ul_right">
+                        <li><a href="#">消息通知</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">注册</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="#">登录</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="top_container">
+                <div class="top_container_middle">
+                    <div class="mi_logo">
+                        <a href="#" class="logo">
+                            <!-- 小米官网 -->
+                        </a>
+                    </div>
+                    <div class="top_container_nav">
+                        <ul class="nav_list">
+
+                            
+                            <!-- <li class="nav_list_item2" id="nav_list_item2"><a href="#">Redmi手机</a>
+                                
+                            </li>
+                            <li class="nav_list_item3"><a href="#">电视</a></li>
+                            <li class="nav_list_item4"><a href="#">笔记本</a></li>
+                            <li class="nav_list_item5"><a href="#">平板</a></li>
+                            <li class="nav_list_item6"><a href="#">家电</a></li>
+                            <li class="nav_list_item7"><a href="#">路由器</a></li>
+                            <li class="nav_list_item8"><a href="#">服务</a></li>
+                            <li class="nav_list_item9"><a href="#">社区</a></li> -->
+                            
+                        </ul>
+                    </div>
+                    <div class="top_container_search">
+                        <input type="text" placeholder="手机" class="search_box">
+                        
+                        <a href="#" class="search_item">
+                            <svg class="icon">
+                                <use href="#icon-sousuo"></use>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="down_list" id="down_list">
+                <div class="down_list_wrapper">
+                    <ul class="down_list_ul">
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                </div>
+                                <div class="img_name">
+                                    Xiaomi Civi 1S
+                                </div>
+                                <p>2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                </div>
+                                <div class="img_name">
+                                    Xiaomi Civi 1S
+                                </div>
+                                <p>2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                </div>
+                                <div class="img_name">
+                                    Xiaomi Civi 1S
+                                </div>
+                                <p>2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                </div>
+                                <div class="img_name">
+                                    Xiaomi Civi 1S
+                                </div>
+                                <p>2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                </div>
+                                <div class="img_name">
+                                    Xiaomi Civi 1S
+                                </div>
+                                <p>2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                </div>
+                                <div class="img_name">
+                                    Xiaomi Civi 1S
+                                </div>
+                                <p>2299元起</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_1">
+            <div class="main_1_nav">
+                <ul class="main_1_ul">
+                    <li class="li_phone"><a href="#">手机</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_phone_content">
+                            手机
+                        </div>
+                    </li>
+                    <li class="li_TV"><a href="#">电视</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_TV_content">
+                            电视
+                        </div>
+                    </li>
+                    <li class="li_laptop"><a href="#">笔记本 平板</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_laptop_content">
+                            笔记本 平板
+                        </div>
+                    </li>
+                    <li class="li_jiadian"><a href="#">家电</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_jiadian_content">
+                            家电
+                        </div>
+                    </li>
+                    <li class="li_outdoor"><a href="#">出行 穿戴</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_outdoor_content">
+                            出行 穿戴
+                        </div>
+                    </li>
+                    <li class="li_wifi"><a href="#">智能 路由器</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_wifi_content">
+                            智能 路由器
+                        </div>
+                    </li>
+                    <li class="li_power"><a href="#">电源 配件</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_power_content">
+                            电源 配件
+                        </div>
+                    </li>
+                    <li class="li_child"><a href="#">健康 儿童</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou "></use>
+                        </svg>
+                        <div class="li_content">
+                            健康 儿童
+                        </div>
+                    </li>
+                    <li class="li_earphone"><a href="#">耳机 音箱</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_earphone_content">
+                            耳机 音箱
+                        </div>
+                    </li>
+                    <li class="li_bag"><a href="#">生活 箱包</a>
+                        <svg class="icon">
+                            <use href="#icon-you-jiantou"></use>
+                        </svg>
+                        <div class="li_content li_bag_content">
+                            生活 箱包
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_1_right">
+                
+            </div>
+        </div>
+        <div class="main_2">
+            <div class="main_2_wrapper">
+                <div class="main_2_wrapper_1">
+                    <ul class="main_2_wrapper_1_ul">
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48" alt="">
+                            保障服务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48" alt="">
+                            企业团购
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48" alt="">
+                            F码通道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48" alt="">
+                            米粉卡
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48" alt="">
+                            以旧换新
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48" alt="">
+                            话费充值
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_2_wrapper_2">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ab8e5096ac6f08bd632e4d5a15d1792.jpg?w=632&h=340" alt="">
+                </div>
+                <div class="main_2_wrapper_3">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5f019908e21571fe48fdad0ebf79249.jpg?w=632&h=340" alt="">
+                </div>
+                <div class="main_2_wrapper_4">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c13d0d11b38ec17fa5d83bc6ba5912.jpg?w=632&h=340" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main_3">
+            <div class="main_3_container">
+                <div class="main_3_top_img">
+                    <a href="#">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0e2b43800d3e1ef40470ac04b3e0140b.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="phone_content_top">
+                <h2>手机</h2>
+                <div class="more_phone">
+                    <a href="#">查看更多
+                        <svg class="icon">
+                            <use href="#icon-youjiantou"></use>
+                        </svg>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="phone_wrapper clearfix">
+                <div class="phone_wrapper_left">
+                    <a href="#">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ac5cafc68c10ce4471869d378f594b52.png?thumb=1&w=293&h=768&f=webp&q=90" alt="">
+                    </a>
+                </div>
+                <div class="phone_wrapper_right">
+                    <ul class="phone_wrapper_right_ul">
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0bcd64f412dfb5e15695fa96d21ecb23.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Xiaomi Civi 1S</h3>
+                            <p class="desc">原生美肌人像｜奇迹阳光动人新色｜骁龙778G Plus</p>
+                            <p class="price">2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d764150a470174741d8b0b04515f7a78.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Redmi 10A</h3>
+                            <p class="desc">大电量、大音量、大屏幕</p>
+                            <p class="price">649</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/18d2099cb0b05bbd23cb1915dfc9d0d6.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Redmi K50 Pro</h3>
+                            <p class="desc">2K直屏的狠旗舰</p>
+                            <p class="price">2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c14106b688ac7ae88e761564789b37.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Redmi K50</h3>
+                            <p class="desc">2K直屏的狠旗舰</p>
+                            <p class="price">2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28febc579eaea6b07c96c0ec48b89f7a.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Redmi K40S</h3>
+                            <p class="desc">口碑真旗舰</p>
+                            <p class="price">1799元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1061cd8d46977b5291d481d0cd44105e.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Redmi K50 电竞版</h3>
+                            <p class="desc">全线拉满的冷血旗舰</p>
+                            <p class="price">2299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a7382271e3a677bf188679ca38d68a42.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Xiaomi 12 Pro</h3>
+                            <p class="desc">全新骁龙8｜2K AMOLED屏幕</p>
+                            <p class="price">4699元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e870129c5c374088bf7cc46be0b7ace2.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                            <h3>Xiaomi 12</h3>
+                            <p class="desc">全新骁龙8｜5000万主摄</p>
+                            <p class="price">3699元起</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./js/base.js" alt="">
+    </div>
+    <div class="footer">
+        <div class="footer_shouhou">
+            <div class="footer_shouhou_nav">
+                <ul class="footer_shouhou_nav_ul">
+                    <li><a href="#">预约维修服务</a></li>
+                    <li><a href="#">预约维修服务</a></li>
+                    <li><a href="#">15天免费换货</a></li>
+                    <li><a href="#">满69元包邮</a></li>
+                    <li><a href="#">520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer_shouhou_detail clearfix">
+                    <dl class="help_center">
+                        <dt>帮助中心</dt>
+                        <dd>
+                            <a href="#">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="#">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="#">订单操作</a>
+                        </dd>
+                    </dl>
+                    <dl class="server_support">
+                        <dt>服务支持</dt>
+                        <dd>
+                            <a href="#">售后政策</a>
+                        </dd>
+                        <dd>
+                            <a href="#">自助服务</a>
+                        </dd>
+                        <dd>
+                            <a href="#">相关下载</a>
+                        </dd>
+                    </dl>
+                    <dl class="unline_store">
+                        <dt>线下门店</dt>
+                        <dd>
+                            <a href="#">小米之家</a>
+                        </dd>
+                        <dd>
+                            <a href="#">服务网点</a>
+                        </dd>
+                        <dd>
+                            <a href="#">授权体验店/专区</a>
+                        </dd>
+                    </dl>
+                    <dl class="about_xiaomi">
+                        <dt>关于小米</dt>
+                        <dd>
+                            <a href="#">了解小米</a>
+                        </dd>
+                        <dd>
+                            <a href="#">加入小米</a>
+                        </dd>
+                        <dd>
+                            <a href="#">投资者关系</a>
+                        </dd>
+                        <dd>
+                            <a href="#">企业社会责任</a>
+                        </dd>
+                        <dd>
+                            <a href="#">廉洁举报</a>
+                        </dd>
+                    </dl>
+                    <dl class="about_us">
+                        <dt>关注我们</dt>
+                        <dd>
+                            <a href="#">新浪微博</a>
+                        </dd>
+                        <dd>
+                            <a href="#">官方微信</a>
+                        </dd>
+                        <dd>
+                            <a href="#">联系我们</a>
+                        </dd>
+                        <dd>
+                            <a href="#">公益基金会</a>
+                        </dd>
+                    </dl>
+                    <dl class="special_service">
+                        <dt>特色服务</dt>
+                        <dd>
+                            <a href="#">F码通道</a>
+                        </dd>
+                        <dd>
+                            <a href="#">礼物码</a>
+                        </dd>
+                        <dd>
+                            <a href="#">防伪查询</a>
+                        </dd>
+                    </dl>
+                    <div class="contact_us">
+                        <p class="contact_phone">400-100-5678</p>
+                        <p class="contact_time">8:00-18:00（仅收市话费）</p>
+                        <a href="#" class="human_service">
+                            <svg class="icon">
+                                <use href="#icon-liaotian"></use>
+                            </svg>
+                            人工客服
+                        </a>
+                        <div class="concern_xiaomi">
+                            关注小米 :
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="#icon-xinlangweibo"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="#icon-iconfontweixin"></use>
+                                </svg>
+                                <img src="	https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx-img.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="footer_nav">
+            <div class="footer_wrapper">
+                <div class="footer_logo"></div>
+                <div class="footer_wrapper_content clearfix">
+                    <p class="p1">
+                        <a href="#">小米商城</a>
+                        <span class="sep">|</span>
+                        <a href="#">MIUI</a>
+                        <span class="sep">|</span>
+                        <a href="#">米家</a>
+                        <span class="sep">|</span>
+                        <a href="#">米聊</a>
+                        <span class="sep">|</span>
+                        <a href="#">多看</a>
+                        <span class="sep">|</span>
+                        <a href="#">游戏</a>
+                        <span class="sep">|</span>
+                        <a href="#">政企服务</a>
+                        <span class="sep">|</span>
+                        <a href="#">小米天猫店</a>
+                        <span class="sep">|</span>
+                        <a href="#">小米集团隐私政策</a>
+                        <span class="sep">|</span>
+                        <a href="#">小米公司儿童信息保护规则</a>
+                        <span class="sep">|</span>
+                        <a href="#">小米商城用户协议</a>
+                        <span class="sep">|</span>
+                        <a href="#">问题反馈</a>
+                        <span class="sep">|</span>
+                        <a href="#">Select Location</a>
+    
+                    </p>
+                    <p class="p2">
+                        <a href="#">北京互联网法院法律服务工作站</a>
+                        <span class="sep">|</span>
+                        <a href="#">中国消费者协会</a>
+                        <span class="sep">|</span>
+                        <a href="#">北京市消费者协会</a>
+                    </p>
+                    <p class="p3">
+                        ©
+                        <a href="#">mi.com</a>
+                        京ICP证110507号
+                        <a href="#">京ICP备10046444号</a>
+                        <a href="#">京公网安备11010802020134号</a>
+                        <a href="#">京网文[2020]0276-042号</a></br>
+                        <a href="#">（京）网械平台备字（2018）第00005号</a>
+                        <a href="#">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+                        <a href="#">营业执照</a>
+                        <a href="#">医疗器械质量公告</a></br>
+                        <a href="#">增值电信业务许可证</a>
+                        网络食品经营备案 京食药网食备202010048  
+                        
+                        <a href="#">食品经营许可证</a></br>
+                        违法和不良信息举报电话：171-5104-4404 
+                        <a href="#">知识产权侵权投诉</a>
+                        本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                </div>
+            </div>
+            <div class="support">
+                <a href="#">
+                    <img src="//i1.mifile.cn/f/i/17/site/truste.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="//s01.mifile.cn/i/v-logo-2.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="//xyt.xinchacha.com/img/icon/icon3.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="//i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/c0afe911370e746683ed78edb4a01155.png" alt="">
+                </a>
+            </div>
+            <div class="best_wish"></div>
+        </div>
+        
+    </div>
+    <script src="./js/base.js"></script>
+</body>
+</html>

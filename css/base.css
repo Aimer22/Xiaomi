@@ -1,0 +1,929 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+.top{
+    height: 140px;
+}
+.top_nav{
+    height: 40px;
+    background-color: #333333;
+}
+.top_nav_middle{
+    height: 100%;
+    width: 1226px;
+    background-color: #333333;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav_ul{
+    
+}
+.nav_ul li{
+    float: left;
+    line-height: 40px;
+    list-style: none;
+}
+.top_nav_middle .spacer{
+    background-color: #3F423C;
+    margin: 15px 8px;
+    width: 1px;
+    height: 12px;
+}
+.nav_ul li a{
+    text-decoration: none;
+    color: #B0B0B0;
+    font-size: 12px;
+    /* padding: 0 17px 0 0; */
+}
+.nav_ul li a:hover{
+    color: #F4F4F4;
+}
+.nav_ul_right{
+    margin-right: 150px;
+}
+.nav_ul_right li{
+    float: right;
+    list-style: none;
+    line-height: 40px;
+}
+.nav_ul_right li a{
+    text-decoration: none;
+    color: #B0B0B0;
+    font-size: 12px;
+}
+.nav_ul_right li a:hover{
+    color: #F4F4F4;
+}
+.shopping_car{
+    width: 120px;
+    height: 100%;
+    background-color: #424242;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    
+}
+.shopping_car:hover a{
+    color: #FF6700;
+}
+.shopping_car:hover .icon{
+    color: #FF6700;
+}
+.shopping_car:hover{
+    background-color: #fff;
+}
+.shopping_car:hover .shopping_down{
+    height: 100px;
+    display: block;
+}
+.shopping_car a{
+    color: #B0B0B0;
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+.shopping_car .icon{
+    font-size: 20px;
+    color: #B0B0B0;
+    vertical-align: middle;
+}
+.shopping_down{
+    position: absolute;
+    width: 316px;
+    height: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    right: 0px;
+    transition: height .3s linear;
+    z-index: 9999;
+    overflow: hidden;
+    
+}
+.download_app{
+    width: 124px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    right: 550px;
+    top: 40px;
+    box-shadow: 0 1px 5px #aaa;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1;
+    transition: height .3s;
+    overflow: hidden;
+    z-index: 110;
+}
+.download_app img{
+    width: 90px;
+    height: 90px;
+    padding: 20px 17px 10px;
+    cursor: pointer;
+    
+}
+.top_down:hover .download_app{
+    height: 146px;
+}
+.active::before{
+    content:'';
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 33px;
+    right: 610px;
+    /* display: none; */
+}
+.top_container{
+    margin-top: 2px;
+    height: 100px;
+}
+.top_container_middle{
+    height: 100%;
+    width: 1229px;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+    /* position: relative; */
+    margin-right: auto;
+    margin-left: auto;
+}
+.mi_logo{
+    width: 62px;
+    float: left;
+    margin-top: 22px;
+}
+.mi_logo .logo{
+    width: 56px;
+    height: 56px;
+    /* background-color: #424242; */
+    display: block;
+    position: relative;
+}
+.mi_logo .logo::before{
+    background: url(//s02.mifile.cn/assets/static/image/logo-mi2.png) no-repeat;
+    background-size: 56px;
+    content: '';
+    transform: translateZ(0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 56px;
+    height: 56px;
+}
+.mi_logo .logo::after{
+    background: url(//s02.mifile.cn/assets/static/image/logo-mi2.png) no-repeat;
+    background-size: 56px;
+    content: '';
+    transform: translateZ(0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 56px;
+    height: 56px;
+    margin-left: -55px;
+    /* 将图片隐藏 */
+    opacity: 0;   
+}
+.mi_logo .logo:hover::after{
+    transform: translate(56px);
+    opacity: 1;
+}
+
+.top_container_nav{
+    height: 100%;
+    width: 850px;
+    /* background-color: #FF6700; */
+    float: left;
+}
+
+.nav_list{
+    float: left;
+    width: 1100px;
+    /* height: 88px;background-color: aqua; */
+    padding: 12px 0 0 30px;
+    font-size: 16px;
+    line-height: 88px;
+    position: relative;
+    
+}
+.nav_list li{   
+    float: left;
+    display: list-item;
+    padding: 0 10px 0 10px;
+}
+.nav_list li:nth-child(1){
+    display: inline-block;
+    height: 100px;
+    padding-left: 150px;
+}
+.nav_list li a{
+    color: #333;
+}
+.nav_list li a:hover{
+    color: #FF6A00;
+}
+.top_container_search{
+    width: 296px;
+    height: 50px;
+    background-color: yellow;
+    float: right;
+    margin-top: 25px;
+    position: relative;
+    font-size: 16px;
+}
+.top_container_search input[type='text']{
+    width: 293px;
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.top_container_search input[type='text']:focus{
+    border: #FF6700 1px solid;
+}
+.top_container_search input[type='text']:focus .search_item{
+    border-left: 1px solid #FF6700;
+    
+}
+.top_container_search .search_item{
+    width: 52px;
+    height: 53px;
+    border-left: 1px solid #333;
+    /* border-right: 1px solid #333; */
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top:0;
+    text-align: center;
+    line-height: 52px;
+    font-size: 25px;
+    transition: all .2s;
+}
+.top_container_search .search_item:hover{
+    background-color: #FF6700;
+    
+}
+.search_item:hover .icon{
+    color: #fff;
+}
+
+/* 
+    头部导航栏的下拉菜单
+*/
+.down_list{
+    height: 0px;
+    border-top: #E0E0E0 1px solid;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 18%);
+    background-color: #fff;
+    /* 
+        设置层级一定要开启定位
+    */
+    z-index: 100;
+    position: relative;
+    /* overflow:hidden; */
+    /* transition: height .3s; */
+    /* background-color: #FF6700; */
+    /* position: absolute;
+    top: 100px; */
+}
+
+/* 
+    通过js给下拉带单加上高度，实现动态效果
+*/
+.down_list_addHeight{
+    height: 230px;
+    
+    
+}
+.down_list_wrapper{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* position: relative;
+    z-index: 9999; */
+}
+.down_list_ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;    /* 确定主轴方向 */
+    justify-content: center;    /* 元素中间，左右留白 */
+    font-size: 0;   /* 解决行块之间的间隙 */
+}
+.down_list_ul li{
+    float: left;
+    height: 230px;
+    width: 180px;
+    position: relative;
+}
+.down_list_ul li:not(:nth-child(1)):before{
+    content: '';
+    width: 1px;
+    height: 100px;
+    background-color: #E0E0E0;
+    position: absolute;
+    top: 35px;
+}
+.down_list_ul .img_box{
+    width: 160px;
+    height: 110px;
+    /* background-color: pink; */
+    margin: 30px 10px 20px 10px;
+}
+.down_list_ul .img_box img{
+    width: 160px;
+    height: 110px;
+}
+.down_list_ul .img_name{
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #333339;
+}
+.down_list_ul p{
+    color: #FF6700;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.main{
+    width: 100%;
+}
+.main_1{
+    width: 1226px;
+    height: 460px;
+    /* outline: 1px solid #FF6A00; */
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+}
+.main_1 .main_1_nav{
+    height: 100%;
+    width: 234px;
+    background-color: #959A98;
+    float: left;
+}
+.main_1 .main_1_right{
+    width: 1226px;
+    height: 100%;
+    /* background-color: #FF6700; */
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9c98d4ee217c03042cdaaef7226ffd37.jpg?w=2452&h=920);
+    background-size:contain;
+    animation: ChangeImg 15s infinite;
+    z-index: 0;
+}
+@keyframes ChangeImg{
+    25%{
+        background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e69f9bc504d70357bc58974cc1e7a05.png?thumb=1&w=1533&h=575&f=webp&q=90);
+    }
+    50%{
+        background-image:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b717c9c84e44409496e993ed6b526c05.jpg?thumb=1&w=1533&h=575&f=webp&q=90)
+    }
+    75%{
+        background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b158441e01e7acd9ad27a49bbac4c0fa.jpg?thumb=1&w=1533&h=575&f=webp&q=90);
+    }
+    100%{
+        background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e69f9bc504d70357bc58974cc1e7a05.png?thumb=1&w=1533&h=575&f=webp&q=90);
+    }
+}
+.main_1_nav .main_1_ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #A5A3A3;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.main_1_nav .main_1_ul li{
+    padding: 10px 10px 10px 30px;
+    /* background-color: red; */
+    position: relative;
+    
+}
+.main_1_nav .main_1_ul li:hover{
+    background-color: #FF6700;
+}
+.main_1_nav .main_1_ul li .icon{
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.main_1_nav .main_1_ul li a{
+    color:#FFFFFF;
+    font-size: 14px;
+}
+.main_1_nav .main_1_ul li .li_content{
+    background-color: #fff;
+    position: absolute;
+    top: -26px;
+    left: 234px;
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    line-height: 460px;
+    box-shadow: 2px 3px 5px #ccc;
+    display: none;
+    height: 460px;
+    width: 1000px;
+    color: #FF6A00;
+}
+.main_1_nav .main_1_ul .li_phone:hover .li_content{
+    display: block;
+}
+.main_1_nav .main_1_ul .li_TV:hover .li_content{
+    display: block;
+    top: -66px;
+}
+.main_1_nav .main_1_ul .li_laptop:hover .li_content{
+    display: block;
+    top: -109px;
+}
+.main_1_nav .main_1_ul .li_jiadian:hover .li_content{
+    display: block;
+    top: -150px;
+}
+.main_1_nav .main_1_ul .li_outdoor:hover .li_content{
+    display: block;
+    top: -190px;
+}
+.main_1_nav .main_1_ul .li_wifi:hover .li_content{
+    display: block;
+    top: -230px;
+}
+.main_1_nav .main_1_ul .li_power:hover .li_content{
+    display: block;
+    top: -270px;
+}
+.main_1_nav .main_1_ul .li_child:hover .li_content{
+    display: block;
+    top: -310px;
+}
+.main_1_nav .main_1_ul .li_earphone:hover .li_content{
+    display: block;
+    top: -350px;
+}
+.main_1_nav .main_1_ul .li_bag:hover .li_content{
+    display: block;
+    top: -390px;
+}
+.main_2{
+    width: 100%;
+}
+.main_2 .main_2_wrapper{
+    height: 170px;
+    width: 1229px;
+    /* outline: 1px solid #FF6700; */
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.main_2_wrapper_1{
+    width: 234px;
+    height: 100%;
+    /* background-color: #333; */
+    background-color: #5F5750;
+}
+.main_2_wrapper_1_ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+.main_2_wrapper_1_ul li{
+    width: 70px;
+    height: 82px;
+    /* background-color: violet; */
+    padding: 0 3px;
+}
+.main_2_wrapper_1_ul li::after{
+    content: '';
+    width: 1px;
+    height: 65px;
+    background-color: #665E57;
+    position: absolute
+}
+.main_2_wrapper_1_ul li::before{
+    content: '';
+    width: 65px;
+    height: 1px;
+    background-color: #665E57;
+    position: absolute
+}
+.main_2_wrapper_1_ul li:hover a{
+    opacity: 1;
+}
+.main_2_wrapper_1_ul li a{
+    display: inline-block;
+    width: 70px;
+    height: 46px;
+    /* background-color: #A5A3A3; */
+    margin: 18px 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    opacity: .7;
+    transition: opacity .2s;
+}
+.main_2_wrapper_1_ul li a img{
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 4px;
+    display: block;
+}
+.main_2_wrapper_2{
+    width: 316px;
+    height: 100%;
+    background-color: #333;
+}
+.main_2_wrapper_2 img{
+    width: 316px;
+    height: 170px;
+    cursor: pointer;
+}
+.main_2_wrapper_3 img{
+    width: 316px;
+    height: 170px;
+    cursor: pointer;
+}
+.main_2_wrapper_3 img:hover{
+    box-shadow: 1px 1px 5px #ccc;
+}
+.main_2_wrapper_4 img:hover{
+    box-shadow: 1px 1px 5px #ccc;
+}
+.main_2_wrapper_2 img:hover{
+    box-shadow: 1px 1px 5px #ccc;
+}
+.main_2_wrapper_3{
+    width: 316px;
+    height: 100%;
+    background-color: #333;
+}
+.main_2_wrapper_4{
+    width: 316px;
+    height: 100%;
+    background-color: #333;
+}
+.main_2_wrapper_4 img{
+    width: 316px;
+    height: 170px;
+    cursor: pointer;
+}
+.main_3{
+    width: 100%;
+    background-color: #F5F5F5;
+}
+.main_3_container{
+    height: 100px;
+}
+.main_3_container .main_3_top_img{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /* background-color: palevioletred; */
+}
+.main_3_container .main_3_top_img img{
+    width: 1226px;
+    height: 100px;
+}
+.main_3_container .main_3_top_img img:hover .main_3_top_img{
+    box-shadow: 1px 1px 1px #333;
+}
+.phone_content_top{
+    width: 1226px;
+    height: 58px;
+    margin: 10px auto;
+    /* background-color: violet; */
+    line-height: 58px;
+    position: relative;
+}
+.phone_content_top h2{
+    color: #333333;
+    font-size: 22px;
+    font-weight: 100;
+}
+.phone_content_top .more_phone{
+    height: 100%;
+    width: 100px;
+    /* background-color: turquoise; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.phone_content_top .more_phone a{
+    color: #424242;
+    font-size: 16px;
+    transition: all .3s;
+}
+.phone_content_top .more_phone .icon{
+    color: #B0B0B0;
+    font-size: 25px;
+    vertical-align: middle;
+    transition: all .3s;
+}
+.phone_content_top .more_phone a:hover{
+    color: #FF6700;
+}
+.phone_content_top .more_phone a:hover .icon{
+    color: #FF6700;
+}
+.phone_wrapper{
+    width: 1226px;
+    /* background-color: yellowgreen; */
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+/* 
+    解决高度塌陷问题
+*/
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.phone_wrapper .phone_wrapper_left{
+    height: 614px;
+    width: 234px;
+    background-color: #fff;
+    float: left;
+    transition: all .3s;
+}
+.phone_wrapper .phone_wrapper_left:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px #ccc;
+}
+.phone_wrapper .phone_wrapper_left img{
+    width: 234px;
+    height: 614px;
+}
+.phone_wrapper_right{
+    height: 614px;
+    width: 992px;
+    /* background-color: #FF6700; */
+    float: right;
+}
+.phone_wrapper_right_ul{
+
+}
+.phone_wrapper_right_ul h3{
+    font-size: 14px;
+    color: #3B3B3B;
+}
+.phone_wrapper_right_ul .desc{
+    color: #B0B7CC;
+    font-size: 12px;
+    padding: 10px 0;
+}
+.phone_wrapper_right_ul .price{
+    color: #FF6700;
+}
+.phone_wrapper_right_ul li{
+    width: 234px;
+    height: 278px;
+    background-color: #fff;
+    float: left;
+    margin: 0 0 14px 14px;
+    padding: 20px 0 0 0;
+    text-align: center;
+    transition: all .3s;
+    
+}
+.phone_wrapper_right_ul li:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px #ccc;
+    
+}
+.phone_wrapper_right_ul li img{
+    width: 160px;
+    height: 160px;
+}
+.footer{
+    width: 100%;
+    /* background-color: #FAFAFA; */
+    margin-top: 10px;
+}
+
+.footer_shouhou{
+    width: 1226px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.footer_shouhou .footer_shouhou_nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: #ccc; */
+    border-bottom: 1px solid #ccc;
+}
+.footer_shouhou_nav_ul{
+    /* display: flex;
+    flex-direction: row; */
+    
+}
+.footer_shouhou .footer_shouhou_nav li{
+    /* width: 100%; */
+    width: 245px;
+    flex-grow: initial;
+    height: 80px;
+    /* background-color: yellow; */
+    float: left;
+    text-align: center;
+    line-height: 80px;
+}
+.footer_shouhou .footer_shouhou_nav li a{
+    font-size: 16px;
+    color: #5A5A5A;
+}
+.footer_shouhou_detail{
+    width: 100%;    
+    /* 
+        高度自适应
+    */
+    /* background-color: pink; */
+    padding-top: 45px;
+}
+
+.footer_shouhou_detail dl{
+    width: 160px;
+    float: left;
+    
+}
+.footer_shouhou_detail dt{
+    font-size: 14px;
+    color: #424242;
+    font-weight: 400;
+    margin-bottom: 18px;
+    
+}
+.footer_shouhou_detail dd{
+    margin-bottom: 8px;
+}
+.footer_shouhou_detail a{
+    color: #757575;
+    font-size: 12px;
+}
+.footer_shouhou_detail a:hover{
+    color: #FF6A00;
+}
+
+.footer_shouhou_detail .contact_us{
+    width: 252px;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+.footer_shouhou_detail .contact_us .contact_phone{
+    color: #FF6A00;
+    font-size: 22px;
+}
+.footer_shouhou_detail .contact_us .contact_time{
+    font-size: 12px;
+    color: #616161;
+    margin: 5px 0;
+}
+.footer_shouhou_detail .contact_us .human_service{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #FF6A00;
+    display: inline-block;
+    font-size: 12px;
+    color: #FF6A00;
+    line-height: 30px;
+    transition: all .3s;
+}
+.footer_shouhou_detail .contact_us .human_service .icon{
+    font-size: 16px;
+    color: #FF6A00;
+}
+.footer_shouhou_detail .contact_us .human_service:hover{
+    background-color: #FF6A00;
+    color: #fff;
+}
+.footer_shouhou_detail .contact_us .human_service:hover .icon{
+    color:#fff;
+}
+.concern_xiaomi{
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+.concern_xiaomi a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+}
+.concern_xiaomi a:nth-child(2):hover img{
+    display: block;
+}
+.concern_xiaomi img{
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+}
+.footer_nav{
+    padding-top: 20px;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+.footer_wrapper{
+    
+    width: 1226px;
+    /* outline: 1px solid #333; */
+    margin: 0 auto;
+}
+.footer_wrapper .footer_logo{
+    width: 56px;
+    height: 56px;
+    background:url(//s02.mifile.cn/assets/static/image/logo-mi2.png) no-repeat;
+    background-size: contain;
+    float: left;
+}
+.footer_wrapper_content{
+    margin-top: 20px;
+    padding-left: 80px;
+}
+.footer_wrapper_content .p3{
+    color: #B0B0B0;
+    font-size: 12px;
+}
+.footer_wrapper_content .p3 a{
+    color: #B0B0B0;
+    font-size: 12px;
+}
+.footer_wrapper_content .p1 a{
+    font-size: 12px;
+    color: #757575;
+}
+.footer_wrapper_content .p2 a{
+    font-size: 12px;
+    color: #757575;
+}
+.footer_wrapper_content span{
+    font-size: 12px;
+    color: #757575;
+}
+.footer_wrapper_content a:hover{
+    color: #FF6A00;
+}
+.support{
+    width: 1226px;
+    margin: 0 auto;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.support a{
+    display: inline-block;
+    margin-right: 5px;
+}
+.support img{
+    height: 28px;
+}
+.best_wish{
+    width: 1226px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) no-repeat center 0;
+    height: 19px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+

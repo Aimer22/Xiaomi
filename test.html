@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+ 
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+ 
+#header {
+	width: 100%;
+}
+ 
+/* 导航栏top部分 */
+.topbar {
+	background-color: #000000;
+}
+ 
+.topbar-nav {
+	width: 1226px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: #000000;
+	line-height: 50px;
+	color: #323232;
+	display: flex;
+	justify-content: space-between;
+}
+ 
+.land,
+.top-shop {
+	display: inline-block;
+}
+ 
+.topbar a {
+	font-size: 10px;
+	color: #9e9e9e;
+	text-align: left;
+}
+ 
+.topbar a:hover {
+	color: #FFFFFF;
+}
+ 
+/* 	导航栏 开始*/
+nav {
+	width: 1226px;
+	height: 100px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.logo-mi2 {
+	width: 60px;
+}
+ 
+nav ul li {
+	float: left;
+	padding: 0 10px;
+}
+ 
+nav a {
+	color: #000000;
+}
+ 
+nav a:hover {
+	color: rgb(255, 106, 0);
+}
+ 
+.search input {
+	width: 250px;
+	height: 50px;
+}
+ 
+.search-box {
+	box-sizing: border-box;
+	border: #000000 1px solid;
+}
+ 
+.search-submit {
+	margin-left: -6px;
+	width: 50px;
+	height: 50px;
+ 
+}
+ 
+/* //隐藏导航栏 */
+/* .hide {
+	width: 1920px;
+	position: absolute;
+	background-color: white;
+	z-index: 99;
+} */
+ 
+.navigationBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0 0px 1px gray;
+}
+ 
+.navigationBar ul {
+	display: flex;
+	justify-content: center;
+	/* width: 1920px; */
+		
+}
+ 
+.navigationBar ul>li>a .figure-thumb {
+	width: 160px;
+	height: 110px;
+	margin: 0 auto 16px;
+	text-align: center;
+margin-top: 10px;
+}
+ 
+.navigationBar ul>li {
+	width: 204px;
+	height: 201px;
+}
+ 
+.navigationBar ul>li a .title {
+	text-align: center;
+	font-size: 12px;
+	color: #000000;
+}
+ 
+.navigationBar ul>li>a .price {
+	margin: 0;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	color: #ff6700;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 导航栏top部分   开始-->
+        <div class="topbar">
+            <div class="topbar-nav">
+                <div class="top_nav-left">
+                    <a rel="nofollow" href="">小米商城</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">MIUI</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">Tol</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">云服务</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">天星数科</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">有品</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">小爱开放平台</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">企业团购</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">资质证照</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">协议规则</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="">
+                        下载app
+
+                    </a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="" target="_blank">智能生活</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" class="">Select Location</a>
+                </div>
+                <div class="land">
+                    <a href="#">登陆</a>
+                    <span class="spn">|</span>
+                    <a href="#">注册</a>
+                    <span class="spn">|</span>
+                    <a href="#">消息通知</a>
+                    <div class="top-shop">
+                        <a href="#"><span class="iconfont icon-gouwuche"></span>购物车（0）</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏top部分   结束-->
+        <nav>
+            <div class="nav_log">
+                    <a href="#"><img src="img/logo-mi2.png" class="logo-mi2"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <!-- <li class="blank-li"><a href="#"></a></li>
+                    <li><a href="#">小米手机</a></li>
+                    <li><a href="#">Redmi红米</a></li>
+                    <li><a href="#">电视</a></li>
+                    <li><a href="#">笔记本</a></li>
+                    <li><a href="#">家电</a></li>
+                    <li><a href="#">路由器</a></li>
+                    <li><a href="#">智能硬件</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">社区</a></li> -->
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="search-box" id="search" name="search" value="笔记本">
+                <button type="button" class="iconfont icon-sousuo search-submit"></button>
+            </div>
+        </nav>
+    
+    <!-- 隐藏导航栏 -->
+    <section class="hide">
+        <div id="phone" class="navigationBar">
+            <ul>
+                <li><a href="">
+                        <div class="figure figure-thumb">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90">
+                        </div>
+                        <div class="title">Xiaomi MIX 4</div>
+                        <p class="price">4999元起</p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <div class="figure figure-thumb">
+                            <img src="./img/img/miu5.png">
+                        </div>
+                        <div class="title">Xiaomi MIX 4</div>
+                        <p class="price">4999元起</p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <div class="figure figure-thumb">
+                            <img src="./img/img/miu6.png">
+                        </div>
+                        <div class="title">Xiaomi MIX 4</div>
+                        <p class="price">4999元起</p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <div class="figure figure-thumb">
+                            <img src="./img/img/miu7.png">
+                        </div>
+                        <div class="title">Xiaomi MIX 4</div>
+                        <p class="price">4999元起</p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <div class="figure figure-thumb">
+                            <img src="./img/img/miu8.png">
+                        </div>
+                        <div class="title">Xiaomi MIX 4</div>
+                        <p class="price">4999元起</p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <div class="figure figure-thumb">
+                            <img src="./img/img/miu9.png">
+                        </div>
+                        <div class="title">Xiaomi MIX 4</div>
+                        <p class="price">4999元起</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </section>
+
+
+</header>
+<script>
+
+$(() => {
+	//适应浏览器屏幕可用宽度
+    $('#app').css('width', (parseInt(window.screen.availWidth) - 16) + 'px');
+ 
+    var categoryList = getCategoryList();
+    showCategory(categoryList);
+	
+ 
+})
+ 
+ 
+function getCategoryList() {
+    var categoryList = [{
+            categoryId: 10010,
+            categoryName: '小米手机',
+            productList: [{
+                    productId: 1001001,
+                    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+                    productName: 'Xiaomi Mix4',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001003,
+                    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+                    productName: 'Xiaomi Mix4',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001004,
+                    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+                    productName: 'Xiaomi Mix4',
+                    productPrice: '4999'
+                },
+				{
+				    productId: 1001005,
+				    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+				    productName: 'Xiaomi Mix4',
+				    productPrice: '4999'
+				},
+				{
+				    productId: 1001006,
+				    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+				    productName: 'Xiaomi Mix4',
+				    productPrice: '4999'
+				},
+				{
+				    productId: 1001007,
+				    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+				    productName: 'Xiaomi Mix4',
+				    productPrice: '4999'
+				},
+			
+            ]
+        },
+        {
+            categoryId: 10010,
+            categoryName: 'Redmi手机',
+            productList: [{
+                    productId: 1001001,
+                    productImg: './img/img/miu9.png',
+                    productName: 'Redmi手机 Mix4',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: './img/img/miu9.png',
+                    productName: 'Redmi手机 Mix4',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: './img/img/miu9.png',
+                    productName: 'Redmi手机 Mix4',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: './img/img/miu9.png',
+                    productName: 'Redmi手机 Mix4',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: './img/img/miu9.png',
+                    productName: 'Redmi手机 Mix4',
+                    productPrice: '4999'
+                }
+            ]
+        },
+        {
+            categoryId: 10010,
+            categoryName: '电视',
+            productList: [{
+                    productId: 1001001,
+                    productImg: './img/img/tv1.png',
+                    productName: '电视',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: './img/img/tv1.png',
+                    productName: '电视',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: './img/img/tv1.png',
+                    productName: '电视',
+                    productPrice: '4999'
+                }
+            ]
+        },
+        {
+            categoryId: 10010,
+            categoryName: '笔记本',
+            productList: [{
+                    productId: 1001001,
+                    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+                    productName: '笔记本',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+                    productName: '笔记本',
+                    productPrice: '4999'
+                },
+                {
+                    productId: 1001001,
+                    productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+                    productName: '笔记本',
+                    productPrice: '4999'
+                }
+            ]
+        },
+        {
+            categoryId: 10010,
+            categoryName: '平板',
+			productList: [{
+			        productId: 1001001,
+			        productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+			        productName: '平板',
+			        productPrice: '4999'
+			    },
+			    {
+			        productId: 1001001,
+			        productImg: './img/img/pb.png',
+			        productName: '平板',
+			        productPrice: '4999'
+			    },
+			    {
+			        productId: 1001001,
+			        productImg: './img/img/pb.png',
+			        productName: '平板',
+			        productPrice: '4999'
+			    }
+			]
+        },
+        {
+            categoryId: 10010,
+            categoryName: '家电',
+			productList: [{
+			        productId: 1001001,
+			        productImg: './img/img/bx.jpg',
+			        productName: '家电',
+			        productPrice: '4999'
+			    },
+			    {
+			        productId: 1001001,
+			        productImg: './img/img/bx.jpg',
+			        productName: '家电',
+			        productPrice: '4999'
+			    },
+			    {
+			        productId: 1001001,
+			        productImg: './img/img/bx.jpg',
+			        productName: '家电',
+			        productPrice: '4999'
+			    }
+			]
+        },
+        {
+            categoryId: 10010,
+            categoryName: '路由器',
+			productList: [{
+			        productId: 1001001,
+			        productImg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae5b5a8e24272dd4cdd77bf6d26954b6.png?thumb=1&w=200&h=138&f=webp&q=90',
+			        productName: '路由器',
+			        productPrice: '4999'
+			    },
+			    {
+			        productId: 1001001,
+			        productImg: './img/img/ly.png',
+			        productName: '路由器',
+			        productPrice: '4999'
+			    },
+			    {
+			        productId: 1001001,
+			        productImg: './img/img/ly.png',
+			        productName: '路由器',
+			        productPrice: '4999'
+			    }
+			]
+        },
+        {
+            categoryId: 10010,
+            categoryName: '智能硬件',
+        },
+        {
+            categoryId: 10010,
+            categoryName: '服务',
+        },
+        {
+            categoryId: 10010,
+            categoryName: '社区',
+        }
+ 
+ 
+ 
+ 
+    ]
+ 
+    return categoryList;
+ 
+}
+//绑定类别
+function showCategory(categoryList) {
+    categoryList.forEach(element => {
+        $('.nav ul').append(function(){
+            console.log('<li has-product="'+Boolean(element.productList)+'"><a href="#">' + element.categoryName + '</a></li>');
+            return '<li has-product="'+Boolean(element.productList)+'"><a href="#">' + element.categoryName + '</a></li>';
+        })
+        
+    });
+    //给li绑定鼠标移入事件
+    $('.nav ul >li').mouseenter(function () {
+     //清空商品列表
+		$('.navigationBar >ul').empty();
+	//获取当前分类的商品
+        var productList=categoryList[$(this).index()].productList;
+     //判断商品列表是否存在  
+		if(productList){
+			//填加模拟数据
+            productList.forEach((value, index) => {
+                var li = '<li>' +
+                    '<a href="#" >' +
+                    '<div class="figure-thumb">' +
+                    '<img src="' + value.productImg + '" alt="">' +
+                    '</div>' +
+                    '<div class="title">' + value.productName + '</div>' +
+                    '<div class="price">' + value.productPrice + '元起</div>' +
+                    '</a>' +
+                    '</li>';
+                $('.navigationBar >ul').append(li);
+            })
+            $('.navigationBar').slideDown(500);
+            
+        }
+ 
+    });
+    //给头部容器绑定鼠标划过事件
+    $('.hide').on(
+        {
+            'mouseover':function(e){
+                var categoryElement=$('.navigationBar,.nav >ul>li[has-product="true"]');
+                if(!$(e.target).is(categoryElement)&&!$(e.target).parents().is(categoryElement)){
+                    $('.navigationBar').hide(100);
+					
+				
+                }
+				
+				
+            },
+            'mouseleave':function () { 
+                $('.navigationBar').hide(100);
+            },
+			
+        }
+    )
+ 
+}
+</script>
+</body>
+</html>
